@@ -68,16 +68,16 @@ public class Day2SolutionSolution {
         SinglyLinkedListNode tortoise = head;
         SinglyLinkedListNode hare = head;
 
-        if (head == null) return false;
+        if (head == null)
+            return false;
 
-        while(hare != null && hare.next != null) {
-
-            
+        while(hare != null && hare.next != null) {            
             
             tortoise = tortoise.next;
             hare = hare.next.next;
 
-            if (hare == tortoise) return true;
+            if (hare == tortoise)
+                return true;
         }
 
         return false;

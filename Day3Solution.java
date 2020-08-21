@@ -6,13 +6,9 @@ import java.util.regex.*;
 
 public class Day3Solution {
     
-    /*
-     * Complete the equalStacks function below.
-     */
+   
     static int equalStacks(int[] h1, int[] h2, int[] h3, int n1, int n2, int n3) {
-        /*
-         * Write your code here.
-         */ 
+       
         Stack<Integer> stackA = new Stack<Integer>();
 		Stack<Integer> stackB = new Stack<Integer>();
 		Stack<Integer> stackC = new Stack<Integer>();
@@ -43,7 +39,6 @@ public class Day3Solution {
 			stackBValue = stackB.peek();
 			stackCValue = stackC.peek();
 
-			// If sum of all three stack are equal.
 			if (stackAValue == stackBValue && stackBValue == stackCValue)
 				return stackAValue;
 
